@@ -39,11 +39,7 @@ if (!fs.existsSync(SERVICE_DIR)) {
 }
 fs.writeFileSync(REG_FILE_PATH, JSON.stringify(DEFAULT_REG_DATA, ' ', 2));
 
-app.get('/', (req, res) => {
-  const reg = fs.readFileSync(REG_FILE_PATH, 'utf-8');
-  res.render('index.mustache', { reg });
-});
-
+// 设置文件的存储
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, ACTUAL_DIR);
@@ -55,6 +51,11 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
+
+app.get('/', (req, res) => {
+  const reg = fs.readFileSync(REG_FILE_PATH, 'utf-8');
+  res.render('index.mustache', { reg });
+});
 
 app.post('/init-snapshot', async (req, res) => {
   await Promise.all([

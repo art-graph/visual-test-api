@@ -1,6 +1,12 @@
 # visual-test-api
 > 通过上传图片，进行视觉测试
 
+# 启动 web
+```
+npm run start
+```
+
+
 # API
 
 - `/ [GET]` : 显示测试报告,效果如下图
