@@ -1,9 +1,16 @@
 # visual-test-api
 > 通过上传图片，进行视觉测试
 
-# 启动 web
+# 安装
 ```
-npm run start
+npm i visual-test-api
+```
+
+# 启动 web
+
+```js
+const app = require('visual-test-api');
+app.listing(3000);
 ```
 
 
