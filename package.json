@@ -1,6 +1,6 @@
 {
   "name": "visual-test-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "通过上传图片，进行视觉测试",
   "main": "index.js",
   "scripts": {

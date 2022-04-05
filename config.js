@@ -1,6 +1,6 @@
 const path = require('path');
 
-const SERVICE_DIR = 'image-diff-service';
+const SERVICE_DIR = 'visual-test-service';
 const ACTUAL_DIR = path.join(SERVICE_DIR, 'actual');
 const EXPECTED_DIR = path.join(SERVICE_DIR, 'expected');
 const DIFF_DIR = path.join(SERVICE_DIR, 'diff');

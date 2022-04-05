@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 module.exports = function (config, defaultRegData) {
   const { SERVICE_DIR ,ACTUAL_DIR,EXPECTED_DIR, DIFF_DIR, REG_FILE_PATH , ASSETS_DIR} = config;
