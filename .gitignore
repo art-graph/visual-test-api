@@ -43,4 +43,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/image-diff-service
+/visual-test-service
+package-lock.json
